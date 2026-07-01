@@ -22,4 +22,18 @@ const employees = [
 
 function showEmployees(){
 
+    let text="";
+
+    employees.forEach(emp=>{
+
+        text +=
+        `<p>
+        <b>${emp.name}</b><br>
+        ID : ${emp.id}<br>
+        Salary : ₹${emp.salary}
+        </p>`;
+    });
+
+    document.getElementById("output").innerHTML=text;
+
 }
